@@ -1,5 +1,5 @@
 .home__container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding-top: 50px;
 
@@ -8,4 +8,19 @@
   justify-content: space-around;
   align-items: baseline;
   flex-wrap: wrap;
+}
+
+.home__games-list {
+  list-style-type: none;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home__games-list > li {
+  padding: 0px 20px;
+  margin-top: 20px;
 }

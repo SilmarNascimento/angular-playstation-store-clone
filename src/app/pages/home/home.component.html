@@ -1,13 +1,13 @@
 <app-menu-bar></app-menu-bar>
 <div class="home__container">
-  <ul>
+  <ul class="home__games-list">
     <li *ngFor="let game of gameList">
       <app-main-card
         [id]=game.id
         [gameCover]=game.gameCover
         [gameLabel]=game.gameLabel
-        [gameType]="game.gameType"
-        [gamePrice]="game.gamePrice"
+        [gameType]=game.gameType
+        [gamePrice]=game.gamePrice
       ></app-main-card>
       <hr>
     </li>
