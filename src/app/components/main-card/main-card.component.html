@@ -1,15 +1,15 @@
 <a href="" class="card__container">
   <img
   class="card__image"
-    src="assets/bt-1.jpg"
+    [src]=[gameCover]
     alt=""
     >
   <app-card-label
-    gameLabel = "Exclusive"
+    gameLabel= {{gameLabel}}
   ></app-card-label>
   <app-card-pricing
-    gameType="Digital"
-    gamePrice="R$ 100,00"
+    gameType={{gameType}}
+    gamePrice={{gamePrice}}
   >
   </app-card-pricing>
 </a>
