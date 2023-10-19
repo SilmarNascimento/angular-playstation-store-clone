@@ -8,6 +8,12 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CardLabelComponent } from './components/main-card/card-label/card-label.component';
 import { CardPricingComponent } from './components/main-card/card-pricing/card-pricing.component';
+import {
+  LucideAngularModule,
+  Mail,
+  Github,
+  Linkedin
+} from 'lucide-angular';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,8 @@ import { CardPricingComponent } from './components/main-card/card-pricing/card-p
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LucideAngularModule.pick({ Mail, Github, Linkedin})
   ],
   providers: [],
   bootstrap: [AppComponent]

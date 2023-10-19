@@ -7,7 +7,7 @@ import { contactList } from 'src/app/data/socialContactList';
   styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent implements OnInit{
-  contacts: String[][] = [];
+  contacts: string[][] = [];
 
   ngOnInit(): void {
       this.contacts = contactList.map(contact => {

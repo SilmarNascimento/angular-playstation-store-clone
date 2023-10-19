@@ -41,6 +41,7 @@
 .menu-bar__container > .menu-bar__item > ul > li > a {
   font-family: sans-serif;
   text-decoration: none;
+  color: inherit;
 }
 
 .menu-bar__container > .menu-bar__item > ul > li > a:hover {
