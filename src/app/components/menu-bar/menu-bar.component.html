@@ -10,7 +10,14 @@
   </div>
   <div class="menu-bar__item">
     <ul>
-      <li><a href="mailto:silmarfnascimento@gmail.com">silmarfnascimento@gmail.com</a></li>
+      <li *ngFor="let contact of contacts; let i = index">
+        <a href="{{contact[1]}}" target="_blank">
+          <lucide-icon name="{{contact[0]}}" class="my-icon"></lucide-icon>
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="mailto:silmarfnascimento@gmail.com">Email</a></li>
       <li><a href="https://www.linkedin.com/in/silmarnascimento/" target="_blank">LinkedIn</a></li>
       <li><a href="https://github.com/SilmarNascimento" target="_blank">Github</a></li>
     </ul>
