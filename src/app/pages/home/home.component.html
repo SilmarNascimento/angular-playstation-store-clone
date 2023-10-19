@@ -1,9 +1,15 @@
 <app-menu-bar></app-menu-bar>
 <div class="home__container">
-<app-main-card
-  gameCover="assets/bt-4.jpg"
-  gameLabel="Exclusive"
-  gameType="PS4"
-  gamePrice="R$ 399,00"
-></app-main-card>
+  <ul>
+    <li *ngFor="let game of gameList">
+      <app-main-card
+        [id]=game.id
+        [gameCover]=game.gameCover
+        [gameLabel]=game.gameLabel
+        [gameType]="game.gameType"
+        [gamePrice]="game.gamePrice"
+      ></app-main-card>
+      <hr>
+    </li>
+  </ul>
 </div>
